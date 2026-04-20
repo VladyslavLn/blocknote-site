@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — BlockNote</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:      #F5E8E2;
+      --surface: #FFFCFA;
+      --ink:     #2B1F1F;
+      --soft:    #6A5757;
+      --mute:    #A89797;
+      --accent:  #B06A72;
+      --radius:  18px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg:      #1A1117;
+        --surface: #261C22;
+        --ink:     #F2E8E4;
+        --soft:    #C4A8A2;
+        --mute:    #7A6767;
+        --accent:  #C4828A;
+      }
+    }
+
+    body {
+      font-family: -apple-system, "Inter Tight", "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
+      padding: 0 20px 60px;
+    }
+
+    .wrap {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 48px 0 32px;
+      border-bottom: 1px solid var(--accent);
+      margin-bottom: 36px;
+    }
+
+    .logo {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 300;
+      color: var(--ink);
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+
+    .updated {
+      font-size: 13px;
+      color: var(--mute);
+    }
+
+    .card {
+      background: var(--surface);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 8px rgba(43,31,31,0.05);
+    }
+
+    h2 {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--mute);
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 15px;
+      color: var(--soft);
+      margin-bottom: 10px;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      font-size: 15px;
+      color: var(--soft);
+      padding: 6px 0 6px 20px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "–";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+    }
+
+    .badge {
+      display: inline-block;
+      background: #d4edda;
+      color: #2d6a4f;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 14px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .badge { background: #1a3d2b; color: #74c69d; }
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--mute);
+    }
+
+    /* English section */
+    .lang-switch {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 32px;
+    }
+    .lang-btn {
+      font-size: 13px;
+      font-weight: 600;
+      padding: 6px 16px;
+      border-radius: 20px;
+      border: none;
+      cursor: pointer;
+      background: var(--surface);
+      color: var(--soft);
+    }
+    .lang-btn.active {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .section { display: none; }
+    .section.visible { display: block; }
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="logo">BlockNote</div>
+    <h1>Privacy Policy</h1>
+    <p class="updated" id="updated-date">Останнє оновлення: 20 квітня 2026 р.</p>
+  </header>
+
+  <div class="lang-switch">
+    <button class="lang-btn active" onclick="showLang('uk', this)">Українська</button>
+    <button class="lang-btn" onclick="showLang('ru', this)">Русский</button>
+    <button class="lang-btn" onclick="showLang('en', this)">English</button>
+  </div>
+
+  <!-- ═══════════════════ UKRAINIAN ═══════════════════ -->
+  <div id="uk" class="section visible">
+
+    <div class="card">
+      <div class="badge">✓ Ваші дані залишаються на вашому пристрої</div>
+      <h2>Коротко про головне</h2>
+      <p>BlockNote — локальний додаток. Ми <strong>не збираємо, не зберігаємо і не передаємо</strong> жодних ваших даних на сервери. Усі записи, клієнти та налаштування зберігаються виключно на вашому iPhone.</p>
+    </div>
+
+    <div class="card">
+      <h2>Які дані використовує додаток</h2>
+      <ul>
+        <li><strong>Контакти:</strong> додаток запитує доступ до книги контактів лише для імпорту клієнтів. Ви самостійно вибираєте кожен контакт. Дані контактів не покидають ваш пристрій.</li>
+        <li><strong>Записи та клієнти:</strong> зберігаються локально у базі даних SwiftData на вашому iPhone.</li>
+        <li><strong>Налаштування:</strong> мова, тема, шаблон повідомлення — зберігаються у стандартному сховищі iOS (UserDefaults) на вашому пристрої.</li>
+        <li><strong>Push-сповіщення:</strong> локальні нагадування, які формуються на пристрої. Жодна інформація не надсилається через мережу.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Що ми НЕ робимо</h2>
+      <ul>
+        <li>Не збираємо аналітику та статистику використання</li>
+        <li>Не показуємо рекламу</li>
+        <li>Не передаємо дані третім особам</li>
+        <li>Не маємо серверної частини — додаток повністю офлайн</li>
+        <li>Не відстежуємо ваше місцезнаходження</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Резервна копія</h2>
+      <p>Функція «Зберегти копію» створює файл <code>.blocknote</code> на вашому пристрої. Ви самостійно вирішуєте, де його зберігати (iCloud, локально тощо). Ми не маємо доступу до цих файлів.</p>
+    </div>
+
+    <div class="card">
+      <h2>Дані дітей</h2>
+      <p>Додаток не призначений для дітей віком до 4 років і не збирає їхніх даних навмисно.</p>
+    </div>
+
+    <div class="card">
+      <h2>Зміни до цієї політики</h2>
+      <p>Якщо ця сторінка зміниться, ми оновимо дату вгорі. Продовження використання додатку означає прийняття нової версії.</p>
+    </div>
+
+    <div class="card">
+      <h2>Контакт</h2>
+      <p>Питання щодо конфіденційності: <a href="mailto:liakhin.v@gmail.com">liakhin.v@gmail.com</a></p>
+    </div>
+
+  </div>
+
+  <!-- ═══════════════════ RUSSIAN ═══════════════════ -->
+  <div id="ru" class="section">
+
+    <div class="card">
+      <div class="badge">✓ Ваши данные остаются на вашем устройстве</div>
+      <h2>Коротко о главном</h2>
+      <p>BlockNote — локальное приложение. Мы <strong>не собираем, не храним и не передаём</strong> никаких ваших данных на серверы. Все записи, клиенты и настройки хранятся исключительно на вашем iPhone.</p>
+    </div>
+
+    <div class="card">
+      <h2>Какие данные использует приложение</h2>
+      <ul>
+        <li><strong>Контакты:</strong> приложение запрашивает доступ к книге контактов только для импорта клиентов. Вы самостоятельно выбираете каждый контакт. Данные контактов не покидают ваше устройство.</li>
+        <li><strong>Записи и клиенты:</strong> хранятся локально в базе данных SwiftData на вашем iPhone.</li>
+        <li><strong>Настройки:</strong> язык, тема, шаблон сообщения — хранятся в стандартном хранилище iOS (UserDefaults) на вашем устройстве.</li>
+        <li><strong>Push-уведомления:</strong> локальные напоминания, формируемые на устройстве. Никакая информация не отправляется через сеть.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Что мы НЕ делаем</h2>
+      <ul>
+        <li>Не собираем аналитику и статистику использования</li>
+        <li>Не показываем рекламу</li>
+        <li>Не передаём данные третьим лицам</li>
+        <li>Не имеем серверной части — приложение полностью офлайн</li>
+        <li>Не отслеживаем ваше местоположение</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Резервная копия</h2>
+      <p>Функция «Сохранить копию» создаёт файл <code>.blocknote</code> на вашем устройстве. Вы самостоятельно решаете, где его хранить (iCloud, локально и т.д.). Мы не имеем доступа к этим файлам.</p>
+    </div>
+
+    <div class="card">
+      <h2>Данные детей</h2>
+      <p>Приложение не предназначено для детей младше 4 лет и не собирает их данные намеренно.</p>
+    </div>
+
+    <div class="card">
+      <h2>Изменения политики</h2>
+      <p>Если эта страница изменится, мы обновим дату вверху. Продолжение использования приложения означает принятие новой версии.</p>
+    </div>
+
+    <div class="card">
+      <h2>Контакт</h2>
+      <p>Вопросы о конфиденциальности: <a href="mailto:liakhin.v@gmail.com">liakhin.v@gmail.com</a></p>
+    </div>
+
+  </div>
+
+  <!-- ═══════════════════ ENGLISH ═══════════════════ -->
+  <div id="en" class="section">
+
+    <div class="card">
+      <div class="badge">✓ Your data stays on your device</div>
+      <h2>The short version</h2>
+      <p>BlockNote is a fully local app. We <strong>do not collect, store, or transmit</strong> any of your data to servers. All records, clients, and settings are stored exclusively on your iPhone.</p>
+    </div>
+
+    <div class="card">
+      <h2>Data the app uses</h2>
+      <ul>
+        <li><strong>Contacts:</strong> the app requests access to your contacts solely to import clients. You individually select each contact. Contact data never leaves your device.</li>
+        <li><strong>Appointments &amp; clients:</strong> stored locally in a SwiftData database on your iPhone.</li>
+        <li><strong>Settings:</strong> language, theme, message template — stored in iOS standard storage (UserDefaults) on your device.</li>
+        <li><strong>Push notifications:</strong> local reminders generated on-device. No information is sent over the network.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>What we do NOT do</h2>
+      <ul>
+        <li>We do not collect analytics or usage statistics</li>
+        <li>We do not display advertising</li>
+        <li>We do not share data with third parties</li>
+        <li>We have no backend — the app is fully offline</li>
+        <li>We do not track your location</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Backup</h2>
+      <p>The "Save Backup" feature creates a <code>.blocknote</code> file on your device. You decide where to store it (iCloud, locally, etc.). We have no access to these files.</p>
+    </div>
+
+    <div class="card">
+      <h2>Children's data</h2>
+      <p>The app is not directed at children under 4 years of age and does not knowingly collect their data.</p>
+    </div>
+
+    <div class="card">
+      <h2>Changes to this policy</h2>
+      <p>If this page changes, we will update the date at the top. Continued use of the app constitutes acceptance of the updated policy.</p>
+    </div>
+
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Privacy questions: <a href="mailto:liakhin.v@gmail.com">liakhin.v@gmail.com</a></p>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2026 BlockNote · All rights reserved
+  </footer>
+
+</div>
+
+<script>
+  const updatedLabels = {
+    uk: 'Останнє оновлення: 20 квітня 2026 р.',
+    ru: 'Последнее обновление: 20 апреля 2026 г.',
+    en: 'Last updated: April 20, 2026'
+  };
+
+  function showLang(lang, btn) {
+    document.querySelectorAll('.section').forEach(el => el.classList.remove('visible'));
+    document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+    document.getElementById(lang).classList.add('visible');
+    btn.classList.add('active');
+    document.getElementById('updated-date').textContent = updatedLabels[lang];
+    document.documentElement.lang = lang;
+  }
+</script>
+</body>
+</html>
